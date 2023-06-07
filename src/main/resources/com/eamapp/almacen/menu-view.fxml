@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eamapp.almacen.controller.MenuController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Datos">
+            <items>
+              <MenuItem fx:id="menuClientes" mnemonicParsing="false" onAction="#menuClientesClick" text="Clientes" />
+                  <MenuItem fx:id="menuProductos" mnemonicParsing="false" onAction="#productosMenuClick" text="Productos" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuVentas" mnemonicParsing="false" onAction="#menuVentasClick" text="Ventas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Salir">
+               <items>
+                  <MenuItem fx:id="menuSalir" mnemonicParsing="false" onAction="#menuSalirClick" text="salir" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="376.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="252.0" fitWidth="503.0" layoutX="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@almacen.jpg" />
+               </image>
+            </ImageView>
+            <TextField alignment="CENTER" editable="false" layoutX="289.0" layoutY="301.0" prefHeight="49.0" prefWidth="293.0" text="Almacen &quot;Diseño de software&quot;">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
